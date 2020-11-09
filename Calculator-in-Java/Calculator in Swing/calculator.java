@@ -5,6 +5,8 @@ import java.lang.*;
 
 public class calculator{
 
+		// TODO: Refactor this God forsaken code
+		
 		private double num, ans;
 		private int calc;
 		private String Operator;
