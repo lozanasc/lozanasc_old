@@ -5,24 +5,39 @@ import java.lang.*;
 
 public class calculator{
 
+
+		private JButton numberButton 
+		(JButton numButton, 
+		ImageIcon numIcon,
+		int numValue,
+		int buttonX,
+		int buttonY,
+		int buttonHeight,
+		int buttonWidth,
+		boolean isOpaque,
+		boolean isFilled,
+		boolean isBorderPainted)
+		{
+			numButton.setBounds(buttonX,buttonY,buttonHeight,buttonWidth);
+			numButton.setOpaque(isOpaque);
+			numButton.setContentAreaFilled(isFilled);
+			numButton.setBorderPainted(isBorderPainted);
+			numButton.setIcon(numIcon);
+			numButton.addActionListener(new ActionListener(){  
+				public void actionPerformed(ActionEvent e){
+				tf.setText(tf.getText().concat(String.valueOf(numValue))); 
+				}  
+				});
+			return numButton;
+		};
+
 		private double num, ans;
 		private int calc;
-		private String Operator;
 
 		//Header Images
 		private ImageIcon background = new ImageIcon("assets/bg.png"); 
 		private ImageIcon ic1 = new ImageIcon("assets/math.png"); 
 		//Button Images
-		private ImageIcon icb1 = new ImageIcon("assets/numbericons/1.png"); 
-		private ImageIcon icb2 = new ImageIcon("assets/numbericons/2.png"); 
-		private ImageIcon icb3 = new ImageIcon("assets/numbericons/3.png"); 
-		private ImageIcon icb4 = new ImageIcon("assets/numbericons/4.png"); 
-		private ImageIcon icb5 = new ImageIcon("assets/numbericons/5.png"); 
-		private ImageIcon icb6 = new ImageIcon("assets/numbericons/6.png"); 
-		private ImageIcon icb7 = new ImageIcon("assets/numbericons/7.png"); 
-		private ImageIcon icb8 = new ImageIcon("assets/numbericons/8.png"); 
-		private ImageIcon icb9 = new ImageIcon("assets/numbericons/9.png"); 
-		private ImageIcon icb0 = new ImageIcon("assets/numbericons/0.png"); 
 		private ImageIcon icb10 = new ImageIcon("assets/operatoricons/add.png"); 
 		private ImageIcon icb11 = new ImageIcon("assets/operatoricons/subt.png"); 
 		private ImageIcon icb12 = new ImageIcon("assets/operatoricons/multi.png"); 
@@ -116,106 +131,16 @@ public class calculator{
 		tf.setFont(new Font("Arial", Font.BOLD, 16));
 		tf.setEditable(false);
 		//Number Buttons
-		n1.setBounds(30,100,50,50);
-		n1.setOpaque(false);
-		n1.setContentAreaFilled(false);
-		n1.setBorderPainted(false);
-		n1.setIcon(icb1);
-		n1.addActionListener(new ActionListener(){  
-		public void actionPerformed(ActionEvent e){
-		tf.setText(tf.getText()+1); 
-        }  
-    	});  
-		n2.setBounds(90,100,50,50);
-		n2.setOpaque(false);
-		n2.setContentAreaFilled(false);
-		n2.setBorderPainted(false);
-				n2.setIcon(icb2);
-		    n2.addActionListener(new ActionListener(){  
-		public void actionPerformed(ActionEvent e){
-		tf.setText(tf.getText()+2); 
-        }  
-    	});  
-		n3.setBounds(150,100,50,50);
-		n3.setOpaque(false);
-		n3.setContentAreaFilled(false);
-		n3.setBorderPainted(false);
-		n3.setIcon(icb3);
-		n3.addActionListener(new ActionListener(){  
-		public void actionPerformed(ActionEvent e){
-		tf.setText(tf.getText()+3);  
-        }  
-    	});  
-		n4.setBounds(210,100,50,50);
-		n4.setOpaque(false);
-		n4.setContentAreaFilled(false);
-		n4.setBorderPainted(false);
-		n4.setIcon(icb4);
-		n4.addActionListener(new ActionListener(){  
-		public void actionPerformed(ActionEvent e){
-		tf.setText(tf.getText()+4); 
-        }  
-    	}); 
-		n5.setBounds(30,160,50,50);
-		n5.setOpaque(false);
-		n5.setContentAreaFilled(false);
-		n5.setBorderPainted(false);
-		n5.setIcon(icb5);
-		n5.addActionListener(new ActionListener(){  
-		public void actionPerformed(ActionEvent e){
-		tf.setText(tf.getText()+5); 
-        }  
-    	}); 
-		n6.setBounds(90,160,50,50);
-		n6.setOpaque(false);
-		n6.setContentAreaFilled(false);
-		n6.setBorderPainted(false);
-		n6.setIcon(icb6);
-		n6.addActionListener(new ActionListener(){  
-		public void actionPerformed(ActionEvent e){
-		tf.setText(tf.getText()+6); 
-        }  
-    	}); 
-		n7.setBounds(150,160,50,50);
-		n7.setOpaque(false);
-		n7.setContentAreaFilled(false);
-		n7.setBorderPainted(false);
-		n7.setIcon(icb7);
-		n7.addActionListener(new ActionListener(){  
-		public void actionPerformed(ActionEvent e){
-		tf.setText(tf.getText()+7); 
-        }  
-    	}); 
-		n8.setBounds(210,160,50,50);
-		n8.setOpaque(false);
-		n8.setContentAreaFilled(false);
-		n8.setBorderPainted(false);
-		n8.setIcon(icb8);
-		n8.addActionListener(new ActionListener(){  
-public void actionPerformed(ActionEvent e){
-tf.setText(tf.getText()+8); 
-        }  
-    }); 
-		n9.setBounds(30,220,50,50);
-		n9.setOpaque(false);
-		n9.setContentAreaFilled(false);
-		n9.setBorderPainted(false);
-		n9.setIcon(icb9);
-		n9.addActionListener(new ActionListener(){  
-public void actionPerformed(ActionEvent e){
-tf.setText(tf.getText()+9); 
-        }  
-    }); 
-		n0.setBounds(90,220,50,50);
-		n0.setOpaque(false);
-		n0.setContentAreaFilled(false);
-		n0.setBorderPainted(false);
-		n0.setIcon(icb0);
-		n0.addActionListener(new ActionListener(){  
-public void actionPerformed(ActionEvent e){
-tf.setText(tf.getText()+0); 
-        }  
-    }); 
+		numberButton(n1, new ImageIcon("assets/numbericons/1.png"),1,30,100,50,50,false,false,false);
+		numberButton(n2, new ImageIcon("assets/numbericons/2.png"),2,90,100,50,50,false,false,false);
+		numberButton(n3, new ImageIcon("assets/numbericons/3.png"),3,150,100,50,50,false,false,false);
+		numberButton(n4, new ImageIcon("assets/numbericons/4.png"),4,210,100,50,50,false,false,false);
+		numberButton(n5, new ImageIcon("assets/numbericons/5.png"),5,30,160,50,50,false,false,false);
+		numberButton(n6, new ImageIcon("assets/numbericons/6.png"),6,90,160,50,50,false,false,false); 
+		numberButton(n7, new ImageIcon("assets/numbericons/7.png"),7,150,160,50,50,false,false,false); 
+		numberButton(n8, new ImageIcon("assets/numbericons/8.png"),8,210,160,50,50,false,false,false); 
+		numberButton(n9, new ImageIcon("assets/numbericons/9.png"),9,30,220,50,50,false,false,false);
+		numberButton(n0, new ImageIcon("assets/numbericons/0.png"),0,90,220,50,50,false,false,false);   
 		// Delete / Clear
 		cls.setBounds(150,220,50,50);
 		cls.setOpaque(false);
@@ -366,3 +291,4 @@ lbl1.setText(num + "*");
 		new calculator();
 	}
 }
+
