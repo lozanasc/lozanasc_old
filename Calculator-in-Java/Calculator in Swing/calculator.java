@@ -7,7 +7,8 @@ public class calculator{
 
 
 		private JButton numberButton 
-		(JButton numButton, 
+		(
+		JButton numButton, 
 		ImageIcon numIcon,
 		int numValue,
 		int buttonX,
