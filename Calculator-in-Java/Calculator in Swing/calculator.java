@@ -32,6 +32,37 @@ public class calculator{
 			return numButton;
 		};
 
+		private JButton operatorButton 
+		(
+		JButton opButton, 
+		ImageIcon numIcon,
+		int numValue,
+		int buttonX,
+		int buttonY,
+		int buttonHeight,
+		int buttonWidth,
+		boolean isOpaque,
+		boolean isFilled,
+		boolean isBorderPainted,
+		int calculatingOperator,
+		String stringOperator)
+		{
+			opButton.setBounds(buttonX,buttonY,buttonHeight,buttonWidth);
+			opButton.setOpaque(isOpaque);
+			opButton.setContentAreaFilled(isFilled);
+			opButton.setBorderPainted(isBorderPainted);
+			opButton.setIcon(numIcon);
+			opButton.addActionListener(new ActionListener(){  
+				public void actionPerformed(ActionEvent e){
+					num = Double.parseDouble(tf.getText());
+					calc=calculatingOperator;
+					tf.setText("");
+					lbl1.setText(num + stringOperator);
+				}  
+				});
+			return opButton;
+		};
+
 		private double num, ans;
 		private int calc;
 
