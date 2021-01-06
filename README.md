@@ -1,3 +1,4 @@
+![Image sample of the Portfolio website](https://github.com/lozanasc/lozanasc_old/blob/FirstPortfolio/repo_assets/Capture.PNG)  
 # My First Portfolio Website
 **Features:**  
 * Hero page
