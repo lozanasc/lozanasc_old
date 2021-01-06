@@ -14,5 +14,8 @@ An ambitious unfinished School Management System with MySQL and Swing
 ###### NOTE: This is better to use with Netbeans IDE
 ###### Branch: https://github.com/lozanasc/lozanasc_old/tree/SchoolManagementSystemWithJava
 ***
-### First Portfolio made with HTML and CSS
+### First Portfolio made with HTML and CSS  
+Simple portfolio website while I was still practicing HTML and CSS
+##### Branch: https://github.com/lozanasc/lozanasc_old/tree/FirstPortfolio  
+##### Live: https://my-first-portfolio-old.herokuapp.com/index.html  
 
