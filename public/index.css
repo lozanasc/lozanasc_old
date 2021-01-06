@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+#root {
+    height: 100vh;
+}
+
+/* * Menu Container */
+.MenuContainer {
+    background-image: url('../../assets/General_Background.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #3D518C;
+    display: flex;
+}
+
+/* * Forms */
+.RegistrationForm {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.LoginForm {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
