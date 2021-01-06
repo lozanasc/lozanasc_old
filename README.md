@@ -1,11 +1,11 @@
-# Repository for my Old Programs  
-I'm pretty sure the title says it all
-******
-## Bank System in C++
+# Bank System CLI with C++
+***
+##### This is a 1st year project of mine.  
+###### Features:  
+- Create account  
+- Deposit  
+- Withdraw  
+###### Nice to have that hasn't been implemented:  
+- Delete account
 
-## Calculator in Java using Swing
-
-## School Management System using Swing and MySQL/JDBC
-
-## First Portfolio made with HTML and CSS
-
+`Note: Perhaps ya'll can implement the nice to have`
