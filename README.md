@@ -1,11 +1,15 @@
-# Repository for my Old Programs  
-I'm pretty sure the title says it all
-******
-## Bank System in C++
-
-## Calculator in Java using Swing
-
-## School Management System using Swing and MySQL/JDBC
-
-## First Portfolio made with HTML and CSS
-
+# My First Portfolio Website
+**Features:**  
+* Hero page
+* About page
+* Projects page
+***
+**How to install:**  
+* git clone https://github.com/lozanasc/lozanasc_old.git
+* git checkout -t origin/FirstPortfolio  
+**or**  
+Download from the Website/Client
+***
+**How to run:**  
+* cd `lozanasc_old`  
+* double click `index.html`
