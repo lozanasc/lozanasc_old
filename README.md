@@ -1,3 +1,4 @@
+![Sample picture showing the menu of the program](https://github.com/lozanasc/lozanasc_old/blob/BankSystemWithC%2B%2B/assets/sample.PNG)
 # Console-based Banking System with C++
 **Features:**  
 * Registration  
