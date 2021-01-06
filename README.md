@@ -1,11 +1,22 @@
-# Repository for my Old Programs  
-I'm pretty sure the title says it all
-******
-## Bank System in C++
-
-## Calculator in Java using Swing
-
-## School Management System using Swing and MySQL/JDBC
-
-## First Portfolio made with HTML and CSS
-
+![Sample photo of the Calculator program]()  
+# Simple and Poorly-designed Calculator with Java/Swing  
+**Features:**
+* Addition, Subtraction, Division, Multiplication  
+**Issues:**
+* Not able to calculate multiple expressions  
+***
+**Installation:**
+**Terminal:**
+* git clone https://github.com/lozanasc/lozanasc_old.git
+* git checkout -t origin/CalculatorWithJava
+**or**
+* Download from the Website/Client
+***
+**How to run:**
+###### Please make sure that you have the jdk installed or an IDE to run it with  
+**Terminal:**
+* cd `lozanasc_old`  
+* javac `calculator.java`  
+* java `calculator`  
+**or**
+You can import it to an IDE of your liking.
