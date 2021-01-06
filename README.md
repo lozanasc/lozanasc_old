@@ -1,9 +1,9 @@
-![Sample photo of the Calculator program]()  
+![Sample photo of the Calculator program](://github.com/lozanasc/lozanasc_old/blob/CalculatorWithJava/repo_assets/sample.PNG)  
 # Simple and Poorly-designed Calculator with Java/Swing  
 **Features:**
 * Addition, Subtraction, Division, Multiplication  
 **Issues:**
-* Not able to calculate multiple expressions  
+###### Not able to calculate multiple expressions  
 ***
 **Installation:**
 **Terminal:**
@@ -18,5 +18,5 @@
 * cd `lozanasc_old`  
 * javac `calculator.java`  
 * java `calculator`  
-**or**
-You can import it to an IDE of your liking.
+**or**  
+**You can import it to an IDE of your liking.**
