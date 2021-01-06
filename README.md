@@ -1,4 +1,4 @@
-![Sample photo of the Calculator program](://github.com/lozanasc/lozanasc_old/blob/CalculatorWithJava/repo_assets/sample.PNG)  
+![Sample photo of the Calculator program](https://github.com/lozanasc/lozanasc_old/blob/CalculatorWithJava/repo_assets/sample.PNG)  
 # Simple and Poorly-designed Calculator with Java/Swing  
 **Features:**
 * Addition, Subtraction, Division, Multiplication  
