@@ -10,6 +10,8 @@ const RegistrationForm = () => {
     const RegisterContainer = document.createElement('div');
     RegisterContainer.className = 'RegistrationForm';
     RegisterContainer.append();
+
+    return RegisterContainer;
 }
 
 export default RegistrationForm;

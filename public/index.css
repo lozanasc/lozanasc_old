@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&family=Rubik:wght@700&display=swap');
+
 * {
     box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
 }
 
 body {
     height: 100vh;
+    width: 100%;
     padding: 0;
     margin: 0;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
 }
 
 #root {
@@ -21,17 +29,48 @@ body {
     background-position: center;
     background-color: #3D518C;
     display: flex;
+    color: white;
+    justify-content: space-evenly;
+}
+
+.HeroContainer{
+    display: flex;
+    flex-flow: column;
+    max-width: 50%;
+}
+
+.HeroContainer > img {
+    height: clamp(140px, 150px, 200px);
+    width: clamp(140px, 150px, 200px);
+    margin: 10px auto;
+}
+.HeroContainer > h1 {
+    margin: 10px auto;
+    text-align: center;
+    font-size: clamp(14px, 26px, 40px);
 }
 
 /* * Forms */
 .RegistrationForm {
-    min-height: 100vh;
+    min-width: 100%;
+    max-width: 50%;
+    margin: auto;
+    top: 0;
+    background-color: #3D518C;
     display: flex;
     flex-direction: column;
 }
 
 .LoginForm {
     min-height: 100vh;
+    max-width: 50%;
     display: flex;
     flex-direction: column;
+}
+
+/* Breakpoint of Mobile devices */
+@media screen and (max-width: 500px){
+    .MenuContainer {
+        flex-flow: column;
+    }
 }

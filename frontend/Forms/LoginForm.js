@@ -8,6 +8,8 @@ const LoginForm = () => {
     const LoginContainer = document.createElement('div');
     LoginContainer.className = 'LoginForm';
     LoginContainer.append();
+
+    return LoginContainer;
 }
 
 export default LoginForm;
