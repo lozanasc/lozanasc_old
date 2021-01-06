@@ -1,6 +1,6 @@
 ![A sample picture of the School Management System](https://github.com/lozanasc/lozanasc_old/blob/SchoolManagementSystemWithJava/repo_assets/sample.PNG)
 # School Management System with Java/Swing/JDBC/MySQL
-An ambitious unfinished project back in sophomore year.
+An ambitious unfinished project back in sophomore year.  
 **Features:**
 * Registration  
 * Login  
