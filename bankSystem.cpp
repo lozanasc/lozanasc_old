@@ -49,12 +49,13 @@ void bank :: registration(){
     cout<<"----REGISTRATION----"<<endl;
     cout<<"Enter PIN: ";cin>>clients[this->cid].id;
     cout<<"Enter your name: ";cin>>clients[this->cid].name;
-    cout<<"***Note: Minimum deposit is $500 \n Enter initial deposit: ";cin>>clients[this->cid].balance;
+    cout<<"***Note: Minimum deposit is $500 \n Enter initial deposit: ";
+    cin>>clients[this->cid].balance;
     if(clients[this->cid].balance < 500)
         exit(0);
     else
         cout<<"Congratulations you're now registered!"<<endl;
-    
+
         menu();
 }
 
