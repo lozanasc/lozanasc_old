@@ -19,7 +19,8 @@ An ambitious unfinished project back in sophomore year.
 **Installation:**  
 **Terminal:**  
 * git clone https://github.com/lozanasc/lozanasc_old.git  
-* git checkout -t origin/SchoolManagementSystemWithJava   
+* git checkout -t origin/SchoolManagementSystemWithJava  
+
 **or**
 Download from the Website/Client
 ***
@@ -28,6 +29,6 @@ Download from the Website/Client
 **Terminal:**
 * cd `lozanasc_old`
 * cd `dist`
-* run by entering in the console `SchoolManagementSystemRev.jar`
+* run by entering in the console `SchoolManagementSystemRev.jar`  
 **or**  
-**You can import it to Netbeans IDE of your liking.** 
+**You can import it to Netbeans IDE** 
