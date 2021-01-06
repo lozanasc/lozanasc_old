@@ -1,5 +1,5 @@
 # Repository for my Old Programs  
-I'm pretty sure the title says it all
+Project I've worked on before and I may or may not update this repository.
 ***
 ### Bank System in C++  
 A simple consoled-based Bank System program with C++ demonstrating the use of classes and Object-oriented principles.  
