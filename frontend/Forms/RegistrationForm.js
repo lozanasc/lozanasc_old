@@ -8,7 +8,7 @@ const RegistrationForm = () => {
 
 
     const RegisterContainer = document.createElement('div');
-    RegisterContainer.className = 'RegistrationForm';
+    RegisterContainer.className = 'Form Registration';
     RegisterContainer.append();
 
     return RegisterContainer;
