@@ -83,6 +83,12 @@ input:focus {
 .InputContainer > h1, button, input {
     margin: 5px auto;
 }
+.InputContainer > p {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+    margin: auto;
+}
 
 .Form {
     min-width: 35%;

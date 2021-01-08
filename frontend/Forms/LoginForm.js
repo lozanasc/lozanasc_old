@@ -32,6 +32,10 @@ const LoginForm = () => {
         .catch(error => console.trace(error));
     },'click');
 
+    const SignUp = document.createElement('p');
+    SignUp.innerHTML = `Don't have an account yet?`;
+    SignUp.addEventListener('click', e => {LoginContainer.remove()});
+
     const InputContainer = document.createElement('div');
     InputContainer.className = 'InputContainer';
     InputContainer.append
@@ -39,7 +43,8 @@ const LoginForm = () => {
         LoginHeader, 
         Username, 
         Password,
-        LoginButton
+        LoginButton,
+        SignUp
     );
 
     const LoginContainer = document.createElement('div');
