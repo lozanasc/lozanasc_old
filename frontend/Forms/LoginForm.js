@@ -29,7 +29,7 @@ const LoginForm = () => {
             })
             .catch(err => console.trace(err));
         })
-        .catch(error => console.log(error));
+        .catch(error => console.trace(error));
     },'click');
 
     const InputContainer = document.createElement('div');

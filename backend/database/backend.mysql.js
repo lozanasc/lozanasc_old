@@ -2,10 +2,10 @@ const mysql = require('mysql');
 
 // Configuration object for MySQL
 const config = {
-    host: 'host goes here',
-    user: 'user goes here',
-    password: 'connection password here',
-    database: 'db name here',
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'lms',
     multipleStatements: true 
 }
 

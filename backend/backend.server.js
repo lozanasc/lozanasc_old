@@ -10,13 +10,13 @@ app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-// const StudentRoute = require('./routes/backend.route.student');
+const StudentRoute = require('./routes/backend.route.student');
 
-// app.use('/student', StudentRoute);
+app.use('/student', StudentRoute);
 
-app.get('/TestPayload', (req,res) => {
-    res.json({username: 'Mekko', password: 'Mekko123'});
-})
+// app.get('/TestPayload', (req,res) => {
+//     res.json({username: 'Mekko', password: 'Mekko123'});
+// })
 
 app.listen(process.env.PORT || API_PORT,()=>{
     console.log(`API Server is Listening at http:/localhost:${API_PORT}`);

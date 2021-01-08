@@ -7,12 +7,12 @@ const Edit = require('../services/student/student.modify');
 const Drop = require('../services/student/student.delete');
 const View = require('../services/student/student.view');
 
-router.get('/View', (req, res) => {
-    const {} = req.params;
-    const ViewStudent = await View();
-});
+// router.get('/View', (req, res) => {
+//     const {} = req.params;
+//     const ViewStudent = await View();
+// });
 
-router.post('/Enroll', (req,res) => {
+router.post('/enroll', async(req,res) => {
     const { Name, Password, FullName, Address} = req.body;
     const AddingStudentData = await Enroll(Name, Password, FullName, Address);
     if(AddingStudentData){
@@ -34,4 +34,6 @@ router.post('/Enroll', (req,res) => {
         )
     }
 })
+
+module.exports = router;
 

@@ -1,13 +1,13 @@
 /**
  * ? What this index.js file is for:
  * * Mao ni mubuhi sa inyo project
+ * * Mu gama ni siyag local development server
  */
 
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 7000;
 const path = require('path');
-
 /*
     ? Para asa ni:
     * Ga serve ni siya ug mga static files

@@ -5,16 +5,16 @@ import LoginForm from "./LoginForm.js";
 export default function Menu()
 {
     
-    const NORSU_LOGO = document.createElement('img');
-    NORSU_LOGO.src = '../../assets/norsu-logo.ico';
+    const Logo = document.createElement('img');
+    Logo.src = '../../assets/norsu-logo.ico';
 
-    const NORSU_HEADER = document.createElement('h1');
-    NORSU_HEADER.innerHTML = 'Our Pride, Our Hope, Our Future';
+    const Header = document.createElement('h1');
+    Header.innerHTML = 'Our Pride, Our Hope, Our Future';
 
     const Hero = document.createElement('div');
     Hero.className = 'Hero';
     Hero.style = 'margin: auto; display: flex; flex-flow: column;';
-    Hero.append(NORSU_LOGO, NORSU_HEADER);
+    Hero.append(Logo, Header);
 
     const HeroContainer = document.createElement('div');
     HeroContainer.className = 'HeroContainer';
