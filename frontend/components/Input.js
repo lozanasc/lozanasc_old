@@ -5,7 +5,7 @@
  * You can set a type value here
  * Value types:
  * - text: set input value as plain text
- * - password: converts all input at the field as asterisk to hide the bullshit
+ * - password: converts all input at the field as asterisk to hide your weak ass password
  */
 const Inputfield = (Placeholder, Type) => {
     const Input = document.createElement('input');

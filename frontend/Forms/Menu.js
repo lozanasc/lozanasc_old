@@ -1,5 +1,4 @@
-import RegistrationForm from "./RegistrationForm.js";
-import LoginForm from "./LoginForm.js";
+import Form from './Form.js';
 
 
 export default function Menu()
@@ -24,7 +23,7 @@ export default function Menu()
     MenuContainer.className = 'MenuContainer'
     MenuContainer.append(
                         HeroContainer,
-                        LoginForm()
+                        Form()
                         );
 
     return MenuContainer;

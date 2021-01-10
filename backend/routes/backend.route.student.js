@@ -6,15 +6,16 @@ const Enroll = require('../services/student/student.add');
 const Edit = require('../services/student/student.modify');
 const Drop = require('../services/student/student.delete');
 const View = require('../services/student/student.view');
-
-// router.get('/View', (req, res) => {
-//     const {} = req.params;
-//     const ViewStudent = await View();
-// });
+const Authenticate = require('../services/student/student.auth');
 
 router.post('/enroll', async(req,res) => {
-    const { Name, Password, FullName, Address} = req.body;
-    const AddingStudentData = await Enroll(Name, Password, FullName, Address);
+    const { Name, 
+            Password, 
+            FullName, 
+            Address, 
+            Course
+        } = req.body;
+    const AddingStudentData = await Enroll(Name, Password, FullName, Address, Course);
     if(AddingStudentData){
         res.status(200)
         .send(
@@ -22,7 +23,7 @@ router.post('/enroll', async(req,res) => {
                 'enrollment_status': AddingStudentData,
                 'enrollment_description': 'Enrolling of Student Information is Successful!'
             }
-        )
+        );
     }
     else{
         res.status(500)
@@ -30,6 +31,42 @@ router.post('/enroll', async(req,res) => {
             {
                 'enrollment_status': AddingStudentData,
                 'enrollment_description': 'Enrolling of Student Information is Unsuccessful!'
+            }
+        );
+    }
+});
+
+router.get('/view', async(req,res) => {
+    const ViewAll = await View();
+    if(ViewAll){
+        res.status(200)
+        .send(
+            ViewAll
+        )
+    }
+    else{
+        res.status(500)
+        .send({
+            "view_status": false,
+            "view_description": "Student Data Fetch is Unsuccessful!"
+        })
+    }
+});
+
+router.post('/auth', async(req,res) => {
+    const {User} = req.body;
+    const StudentData = await Authenticate(User);
+    if(StudentData){
+        res.status(200).send(  
+            StudentData
+        )
+    }
+    else {
+        res.status(500)
+        .send(
+            {
+                "auth_status": false,
+                "auth_description": "Username does not exist!"
             }
         )
     }

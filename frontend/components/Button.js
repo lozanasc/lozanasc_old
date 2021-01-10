@@ -7,8 +7,7 @@
 const Button = (Text, Callback, Event) => {
     const Btn =  document.createElement('button');
     Btn.innerHTML = Text;
-    Btn.addEventListener(Event, Callback);
-
+    Btn.addEventListener(Event, Callback);    
     return Btn;
 }
 
